@@ -85,6 +85,17 @@ app.get('/usuario', async (req, resp) => {
     }
 })
 
+app.put('/chat/:id', async (req, resp) => {
+    let id = req.params.id
+    let n_msg = req.body.mensagem
+
+    let r = await db.tb_chat.update({ds_mensagem: n_msg},{ where:{ id_chat: id}})
+    if(r ==  null)
+    console.log('tem para errada aí')
+
+    resp.sendStatus(200);
+})
+
 app.post('/chat', async (req, resp) => {
     try {
         let chat = req.body;
