@@ -1,0 +1,18 @@
+@font-face{
+    font-family: "Roboto regular";
+    src:url("./Fonts/Roboto-Regular.ttf")
+}
+@font-face {
+    font-family: "Roboto medium";
+    src: url("./Fonts/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: "Roboto bold";
+    src: url("./Fonts/Roboto-Bold.ttf");
+}
+
+body{ margin: 0px;
+    background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #F5F5F5;
+};
+
+thead{ text-align: left;}
