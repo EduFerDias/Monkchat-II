@@ -89,7 +89,7 @@ export default function Pagina () {
     async function deletarAluno (id) {
         confirmAlert({
             title: "Remover aluno",
-            message: `tem ceteza que quer deletar o aluno ${id}?`,
+            message: `tem certeza que quer deletar o aluno ${id}?`,
             buttons: [
                 {
                     label: "Sim",

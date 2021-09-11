@@ -21,8 +21,8 @@ app.post('/matricula', async(req, resp) =>{
             resp.send({erro: "o nome não pode ter menos que quatro caractéres"})
             return;
         } 
-        else if (data.chamada < 0) {
-            resp.send({erro: "a chamada não pode ser menor que zero"})
+        else if (data.chamada <= 0) {
+            resp.send({erro: "a chamada não pode ser menor ou igual a zero"})
             return;
         }
         else if (data.curso.length <  4 ) {
