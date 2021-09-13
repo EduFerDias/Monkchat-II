@@ -50,27 +50,13 @@ export default function Pagina () {
         
 
         if(idAlt !== 0){
-                        let env = {
-                            nome,
-                            chamada,
-                            turma,
-                            curso
-                        }
-                        r = await api.AlterarAluno(idAlt, env)
+                        r = await api.AlterarAluno(idAlt, nome.trim(), chamada, curso.trim(), turma.trim())
                         y ='Aluno alterado com sucesso!'
                         setAlt(0);
 
         }else{
-
-                let env = {
-                            nome,
-                            chamada,
-                            turma,
-                            curso
-                        }
-                        console.log(env);
                         y = 'Aluno inserido com sucesso!'
-                        r = await api.InserirAluno(env)
+                        r = await api.InserirAluno(nome.trim(), chamada, curso.trim(), turma.trim())
             }
 
         if(validarResposta(r))

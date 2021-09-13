@@ -10,18 +10,29 @@ export default class Api {
         return r.data;
     } 
 
-    async InserirAluno (dado) {
+    async InserirAluno (nome, chamada, curso, turma) {
         try{
-
-
-        let r = await api.post(`/matricula`, dado)
-        return r.data;
+            
+            let env = {
+                nome,
+                chamada,
+                turma,
+                curso
+            }
+             let r = await api.post(`/matricula`, env)
+            return r.data;
     } catch(e){
         return`${e}`
     }
     }
 
-    async AlterarAluno(id, info) {
+    async AlterarAluno(id, nome, chamada, curso, turma) {
+        let info = {
+            nome,
+            chamada,
+            turma,
+            curso
+        }
         let r = await api.put(`/matricula/${id}`, info)
         return r.data;
     }

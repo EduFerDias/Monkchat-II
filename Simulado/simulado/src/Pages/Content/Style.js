@@ -266,19 +266,32 @@ tr:nth-child(odd){
 tr:hover{
     .coluna-acao > button{
         visibility:visible;
+        transition: 0.5s;
     }
 }
 
-
+.icons{
+    display: flex;
+    flex-direction: row;
+}
 .icons button:hover{
     background-color: #797979;
 }
 .icons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: #565656;
     border: none;
     border-radius: 60px;
     margin: 0px 8.5px;
-    padding: 8px 9px 6px 10px;
+    height: 38px;
+    width: 38px;
+}
+.icons button svg{
+    height: 20px;
+    width: 20px;
 }
 `
 
