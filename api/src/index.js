@@ -60,7 +60,7 @@ app.post('/matricula', async(req, resp) =>{
         let rev = await db.tb_matricula.findOne({where:{nm_turma: insert.nm_turma, nr_chamada: insert.nr_chamada}})
         if(rev !== null){
             resp.send({erro: "este aluno ja existe"})
-            return;a
+            return;
         }
 
         let r = await db.tb_matricula.create(insert)
