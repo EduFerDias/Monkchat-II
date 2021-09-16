@@ -13,4 +13,3 @@ const sequelize = new Sequelize(
 
 const db = initdb(sequelize);
 export default db;
-a
