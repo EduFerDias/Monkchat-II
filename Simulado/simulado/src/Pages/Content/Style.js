@@ -65,8 +65,8 @@ const Conteudo = styled.div`
     border-radius: 1.25em;
     margin-right: 0.875em;
 
-    height: 1.625em ;
-    width: 0.375em;
+    height: 26px ;
+    width: 6px;
 }
 .menu{
     font-family: "Roboto medium";
@@ -179,17 +179,18 @@ const Conteudo = styled.div`
 .novo-aluno button{
     font-family: "Roboto bold";
     background:#E911C6;
-    width: 6.625em;
-    height: 2.25em;
+    padding:10px 22px;
     border-radius: 44px;
     color: white;
     border: none;
 }
 
 .info {
+    font-family: "Roboto medium";
     display: flex;
     flex-wrap: wrap;
     width: 750px;
+    color: #615858;
 }
 
 .label{
@@ -257,6 +258,7 @@ td{
     padding: 20px 0px 20px 37px;
     font-family: "Roboto medium";
     font-size: 1.125em;
+    color:#6D6868;
 }
 tr:nth-child(odd){
     background-color: #f5f5f5;
@@ -272,6 +274,7 @@ tr:hover{
         transition: 0.5s;
     }
 }
+
 
 .icons{
     display: flex;
