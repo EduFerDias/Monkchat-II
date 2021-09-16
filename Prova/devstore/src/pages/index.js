@@ -32,7 +32,6 @@ export default function Pagina() {
         else{
             loading.current.continuousStart();
             r = await api.inserirProduto(nome.trim(), cat.trim(), preco_d, preco_p, ava, desc.trim(), estoq, link.trim());
-            toast.info(nome)
             y = 'Produto inserido com sucesso!';
         }
 
