@@ -69,7 +69,7 @@ export default function Pagina() {
                         toast.success("Produto apagado com sucesso!")
 
                         loading.current.complete();
-                        return
+                        return r;
                     }
                 },
                 {
